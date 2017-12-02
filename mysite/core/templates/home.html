@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+	
+{% block content %}
+  <h2> <style= font color:"Tomato";>Welcome, {{ user.username }}!</h2>
+  <body>
+	<form>
+ <div class="align">
+Enter name of place<br>
+<input type="text" name="place"><br>
+ Enter the location<br>
+  <select>
+  <option value="Hospital">Hospital</option>
+  <option value="Metro station">Metro Station</option>
+  <option value="School">School</option>
+  <option value="Park">Park</option>
+</select><br>
+  Enter radius:<br>
+  <input type="integer" name="radius"><br>
+  <button type="submit">Submit</button>
+  </div>
+  
+</form>
+</body>
+{% endblock %}

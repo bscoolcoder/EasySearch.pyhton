@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <meta charset="utf-8">
+    <title>{% block title %}Easy Search{% endblock %}</title>
+  </head>
+   <body>
+  <div class="footer">
+                               
+							   <footer>
+                                  <p>Contact us:<a href="mailto:abc@gmail.com">abc@gmail.com      </a></p>
+								      <div class="center";
+									 <p><a href="https://github.com/bscoolcoder/EasySearch.pyhton">See on github </a></p>
+									 </div>
+								 
+								  
+								 <p>Copyright@ LearnIt Girl!</p>
+								  </footer>
+                                  </div>
+								 
+  
+	<body style="background-color:powderblue;">
+	<h1><font color="Tomato"><center>Easy Search</center></font></h1>
+	
+      {% if user.is_authenticated %}
+
+        <div class=topcorner><a href="{% url 'logout' %}"><strong>LOGOUT</strong></a></div>
+		<!--<style type="text/css">
+       .topcorner{
+        position:absolute;
+         top:0;
+         right:0;
+      }
+     </style>-->
+		</body>
+      {% else %}
+        <!--<a href="{% url 'login' %}">login</a> / <a href="{% url 'signup' %}">signup</a>-->
+      {% endif %}
+      <hr>
+    </header>
+    <main>
+      {% block content %}
+	 
+									
+      {% endblock %}
+    </main>
+	
+  </body>
+</html>
