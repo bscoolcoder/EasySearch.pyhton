@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<style></style>
+<body>
+
+
+
+{% for perfect_place, flag in mylist.items %}
+	<div class="container-fluid">
+		<div class="jumbotron3">
+		{{ perfect_place }}
+		</div>
+		<ul type="square">
+        		<li><b> Address: </b> {{ flag.0 }}</li>
+        		<li><b> Local Phone Number: </b> {{ flag.1 }} </li>
+        		<li><b> International Phone Number: </b>{{ flag.2 }}</li>       
+      		</ul>
+		<br><br><hr><br>
+	</div>
+	{% endfor %}
+
+	</body>
+	</html>
