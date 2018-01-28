@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect
 from googleplaces import GooglePlaces, types, lang
 from django.http import HttpResponseRedirect
 
-API_KEY= 'AIzaSyDmrEIL2QYmb0SIpupFSRDV7ruITLWTMTc'
+API_KEY= 'A********************************'
 google_places = GooglePlaces(API_KEY)
 
 @login_required
