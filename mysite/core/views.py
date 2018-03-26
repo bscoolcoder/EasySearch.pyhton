@@ -11,7 +11,7 @@ google_places = GooglePlaces(API_KEY)
 
 @login_required
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'home.html',{})
 
 
 def signup(request):
